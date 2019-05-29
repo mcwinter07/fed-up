@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.scss';
-import Intro from './components/intro'
+import Intro from './components/Intro';
+import TeamList from './components/TeamList';
 
 function App() {
   return (
     <div className="App">
-      <Intro/>
+      <Intro />
+      <TeamList />
     </div>
   );
 }
