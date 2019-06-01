@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'
 import Quote from './Quote';
 import InfoCard from './InfoCard';
-import img1 from '../assets/images/challenge-1.jpg';
-import img2 from '../assets/images/challenge-2.jpg';
+import img1 from '../assets/images/process-1.jpg';
+import img2 from '../assets/images/process-2.jpg';
 
-const challenges = {
+
+const processes = {
   quotes: [
     {
-      quoteText: 'How can we ensure Fed Square remains one of Melbourne’s key cultural landmarks and iconic meeting places – a space where creativity, curiosity and inspiration collide?',
+      quoteText: 'How might we connect Melburnians to Fed Square and connect Fed Square to ITSELF?!'
     }
   ],
   articles: [
@@ -26,14 +27,14 @@ const challenges = {
   ]
 }
 
-const TheChallenge = () => {
+ const TheProcess = () =>{
   return (
-    <section className="the-challenge">
+    <section className="the-process">
       <Quote
-        quoteText={challenges.quotes[0].quoteText}
+        quoteText={processes.quotes[0].quoteText}
       />
-      <h1>The Challenge</h1>
-      {challenges.articles.map(article => {
+      <h1>The Process</h1>
+      {processes.articles.map(article => {
         const { imgSource, alt, text, isRightAligned } = article;
         return (
           <InfoCard
@@ -48,4 +49,4 @@ const TheChallenge = () => {
   )
 }
 
-export default TheChallenge;
+export default TheProcess;
