@@ -50,6 +50,7 @@
   &__image-container {
     margin-right: 50px;
     img {
+      object-fit: cover;
       width: 250px;
       height: 250px;
       border-radius: 50%;
