@@ -53,7 +53,7 @@ const Team = () => {
   return (
     <div>
       <h1>Meet the Team</h1>
-      <ul className="intro__list">
+      <ul className="team__list">
         {teamFedUp.teamMembers.map(member => {
           const { name, profileImage, title, linkedIn } = member
           return (

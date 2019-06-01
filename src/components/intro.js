@@ -5,7 +5,10 @@ import Logo from '../../src/assets/logo.svg';
 const Intro = () => {
   return (
     <div className="intro">
-      <Icon iconClass='intro__team-icon' iconSource={Logo} />
+      <Icon
+        iconClass='intro__team-icon'
+        iconSource={Logo}
+      />
     </div>
   )
 }
