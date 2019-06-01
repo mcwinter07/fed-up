@@ -8,24 +8,51 @@
   flex-direction: column;
   justify-content: center;
   
-  &__icon {
+  &__logo-icon {
+    // width: 50%;
+  }
+}
 
+.team__list {
+  list-style: none;
+  padding: 0;
+
+  &-item {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+  &-img {
+    width: 250px;
+    height: 250px;
+    background: blue;
+    border-radius: 50%
+  }
+}
+
+.the-challenge {
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  text-align: left;
+
+  &--right {
+    flex-direction: row-reverse;
+    & .info-card__image-container {
+      margin-right: 0;
+      margin-left: 50px;
+    }
   }
 
-  &__list {
-    list-style: none;
-    padding: 0;
-
-    &-item {
-      display: inline-flex;
-      flex-direction: column;
-      margin: 50px;
-    }
-    &-img {
+  &__image-container {
+    margin-right: 50px;
+    img {
       width: 250px;
       height: 250px;
-      background: blue;
-      border-radius: 50%
+      border-radius: 50%;
     }
   }
 }
