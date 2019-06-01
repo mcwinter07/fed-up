@@ -29,10 +29,10 @@ const challenges = {
 const TheChallenge = () => {
   return (
     <section className="the-challenge">
+      <h1>The Challenge</h1>
       <Quote
         quoteText={challenges.quotes[0].quoteText}
       />
-      <h1>The Challenge</h1>
       {challenges.articles.map(article => {
         const { imgSource, alt, text, isRightAligned } = article;
         return (
