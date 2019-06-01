@@ -14,13 +14,13 @@ const processes = {
   articles: [
     {
       imgSource: img1,
-      alt: 'Federation Square',
+      alt: 'Fed Up team members Michael, Fotima and Linda',
       text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
       isRightAligned: false
     },
     {
       imgSource: img2,
-      alt: 'Federation Square branding',
+      alt: 'Work on laptops and post it notes',
       text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
       isRightAligned: true
     }
@@ -30,10 +30,10 @@ const processes = {
  const TheProcess = () =>{
   return (
     <section className="the-process">
+    <h1>The Process</h1>
       <Quote
         quoteText={processes.quotes[0].quoteText}
       />
-      <h1>The Process</h1>
       {processes.articles.map(article => {
         const { imgSource, alt, text, isRightAligned } = article;
         return (

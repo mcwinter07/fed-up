@@ -1,11 +1,11 @@
 import React from 'react';
 import TeamProfile from './TeamProfile';
-import profileImgLinda from '../assets/images/team-linda.jpeg';
-import profileImgFotima from '../assets/images/team-fotima.jpeg';
-import profileImgTim from '../assets/images/team-tim.jpeg';
-import profileImgTj from '../assets/images/team-tj.jpeg';
-import profileImgTushara from '../assets/images/team-tushara.jpeg';
-import profileImgWinter from '../assets/images/team-winter.jpeg';
+import profileImgLinda from '../assets/images/team-linda.jpg';
+import profileImgFotima from '../assets/images/team-fotima.jpg';
+import profileImgTim from '../assets/images/team-tim.jpg';
+import profileImgTj from '../assets/images/team-tj.jpg';
+import profileImgTushara from '../assets/images/team-tushara.jpg';
+import profileImgWinter from '../assets/images/team-winter.jpg';
 
 const Team = () => {
   const teamFedUp = {
