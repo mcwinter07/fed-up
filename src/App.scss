@@ -30,7 +30,24 @@
   }
 }
 
+.the-team {
+  min-height: 100vh;
+  background: lightgrey;
+}
+
+.the-challenge {
+  min-height: 100vh;
+  background: lightgreen;
+}
+
+.the-process {
+  min-height: 100vh;
+  background: lightcoral;
+}
+
 .the-pitch {
+  min-height: 100vh;
+  background: lightblue;
 
   &__video {
     width: 60%;
