@@ -5,6 +5,7 @@ import TeamList from './components/TeamList';
 import TheChallenge from './components/TheChallenge';
 import TheProcess from './components/TheProcess';
 import ThePitch from './components/ThePitch';
+import TheResult from './components/TheResult';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <TheChallenge />
       <TheProcess />
       <ThePitch />
+      <TheResult/>
     </div>
   );
 }

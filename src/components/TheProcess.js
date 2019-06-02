@@ -1,9 +1,9 @@
 import React from 'react'
 import Quote from './Quote';
 import InfoCard from './InfoCard';
+import VideoFrame from './VideoFrame';
 import img1 from '../assets/images/process-1.jpg';
 import img2 from '../assets/images/process-2.jpg';
-
 
 const processes = {
   quotes: [
@@ -30,7 +30,10 @@ const processes = {
  const TheProcess = () =>{
   return (
     <section className="the-process">
-    <h1>The Process</h1>
+      <h1>The Process</h1>
+      <VideoFrame
+        vidSource='https://www.youtube.com/embed/nAPXecjQAjY?controls=0'
+      />
       <Quote
         quoteText={processes.quotes[0].quoteText}
       />
