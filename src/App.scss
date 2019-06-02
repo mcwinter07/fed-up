@@ -3,16 +3,6 @@
   background: dodgerblue;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  &__logo-icon {
-    // width: 50%;
-  }
-}
-
 .team__list {
   list-style: none;
   padding: 0;
@@ -78,58 +68,6 @@
         top: 0;
         width: 100%;
       }
-    }
-  }
-}
-
-.info-card {
-  display: flex;
-  align-items: center;
-  margin: 50px;
-  text-align: left;
-
-  &--right {
-    flex-direction: row-reverse;
-    & .info-card__image-container {
-      margin-right: 0;
-      margin-left: 50px;
-      & img {
-        clip-path: polygon(5% 6%, 94% 28%, 97% 94%, 9% 97%);
-      }
-    }
-  }
-
-  &__image-container {
-    margin-right: 50px;
-    img {
-      object-fit: cover;
-      clip-path: polygon(9% 16%, 100% 0, 89% 100%, 2% 100%);
-      width: 250px;
-      height: 250px;
-      // border-radius: 50%;
-    }
-  }
-}
-
-.pitch-card {
-  display: inline-flex;
-  flex-direction: column;
-  width: 25%;
-  margin-right: 50px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:nth-child(odd) {
-    img {
-      clip-path: polygon(0 5%, 88% 19%, 92% 96%, 0% 100%);
-    }
-  }
-
-  &:nth-child(even) {
-    img {
-      clip-path: polygon(0 15%, 88% 13%, 89% 84%, 12% 100%);
     }
   }
 }

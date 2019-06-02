@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import './styles/main.scss';
 import Intro from './components/Intro';
 import TeamList from './components/TeamList';
 import TheChallenge from './components/TheChallenge';
