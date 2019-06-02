@@ -4,6 +4,7 @@ import InfoCard from './InfoCard';
 import VideoFrame from './VideoFrame';
 import img1 from '../assets/images/process-1.jpg';
 import img2 from '../assets/images/process-2.jpg';
+import img3 from '../assets/images/process-3.jpg';
 
 const processes = {
   quotes: [
@@ -23,14 +24,20 @@ const processes = {
       alt: 'Work on laptops and post it notes',
       text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
       isRightAligned: true
+    },
+    {
+      imgSource: img3,
+      alt: 'Work on laptops and post it notes',
+      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      isRightAligned: false
     }
   ]
 }
 
- const TheProcess = () =>{
+ const TheProcess = () => {
   return (
-    <section className="the-process">
-      <h1>The Process</h1>
+    <section className="section-content the-process">
+      <h1 className="section-header">The Process</h1>
       <VideoFrame
         vidSource='https://www.youtube.com/embed/nAPXecjQAjY?controls=0'
       />
