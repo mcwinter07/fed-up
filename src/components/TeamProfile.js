@@ -12,7 +12,7 @@ const TeamProfile = (props) => {
         />
       </a>
       <h2>{teamProfileName}</h2>
-      <h4>{teamProfileTitle}</h4>
+      <h3>{teamProfileTitle}</h3>
     </li>
   )
 }

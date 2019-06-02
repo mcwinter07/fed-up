@@ -22,19 +22,18 @@
       }
     }
   }
-
   @return $get;
 }
 
-// gutter allows us to standardise our spacing between elements
+// gutter allows us to standardize our spacing between elements
 
-@function gutter($size: medium, $multiplier: 1) {
+@function gutter($multiplier: 1, $size: medium) {
   // $pixels: 
   @return map-get($spacers, $size) * $multiplier;
 }
 
 
-// color will grab the colours defined in our palet
+// color will grab the colours defined in our palette
 @function color($keys...) {
   $value: map-get-deep($colors, $keys);
   @return $value;

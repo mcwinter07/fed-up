@@ -1,5 +1,65 @@
+// FONT IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Rubik|Source+Sans+Pro:700&display=swap');
 $spacers: (
   small: 8px,
   medium: 16px,
   large: 24px,
-)
+);
+
+$palette: (
+  burgundy: #a4343a,
+  flamingo: #ff485b,
+  coral: #e84a37,
+  orange: #e97200,
+  lemon: #ffb718,
+  grape: #c0b800,
+  apple: #69813a,
+  aqua: #00aea9,
+  dusty-teal: #9ab8ac,
+  pale-blue: #e4edfa,
+  light-blue: #8cb7e8,
+  very-light-blue: #e4edfa,
+  blue: #107bbf,
+  black: #000,
+  slate: #5c666f,
+  grey: #a8aab7,
+  light-grey: #d2d2d2,
+  very-light-grey: #f8f7f6,
+  white: #fff,
+  transparent: rgba(0, 0, 0, 0)
+);
+
+$colors: (
+  bg: map-get($palette, flamingo),
+  primary: map-get($palette, lemon),
+  secondary: map-get($palette, deep-blue),
+  tertiary: map-get($palette, light-beige),
+  link: map-get($palette, blue),
+  link-hover: map-get($palette, deep-blue)
+);
+
+
+// FONT VARIABLES
+
+$heading-font: 'Source+Sans+Pro', sans-serif;
+$sub-head-font: 'rubik', sans-serif;
+$body-font: 'Source+Sans+Pro', sans-serif;
+
+// DEFAULT FONTS STYLES
+
+p, a {
+  font-family: $body-font;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: $heading-font;
+}
+
+blockquote, q {
+  font-family: $sub-head-font;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+// PAGE STYLES
