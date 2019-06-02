@@ -1,31 +1,20 @@
-.App {
-  text-align: center;
-  background: dodgerblue;
+.twitter {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-  &__icon {
+.tweet {
+  margin: 20px 50px;
+}
 
-  }
-
-  &__list {
-    list-style: none;
-    padding: 0;
-
-    &-item {
-      display: inline-flex;
-      flex-direction: column;
-      margin: 50px;
-    }
-    &-img {
-      width: 250px;
-      height: 250px;
-      background: blue;
-      border-radius: 50%
+.the-result {
+  &__image {
+    max-width: 900px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+    & img {
+      width: 100%;
     }
   }
 }

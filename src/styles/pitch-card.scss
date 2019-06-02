@@ -1,0 +1,22 @@
+.pitch-card {
+  display: inline-flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:nth-child(odd) {
+    img {
+      clip-path: polygon(0 5%, 88% 19%, 92% 96%, 0% 100%);
+    }
+  }
+
+  &:nth-child(even) {
+    img {
+      clip-path: polygon(0 15%, 88% 13%, 89% 84%, 12% 100%);
+    }
+  }
+}
