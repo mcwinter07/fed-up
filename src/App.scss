@@ -1,73 +1,8 @@
-.App {
-  text-align: center;
-  background: dodgerblue;
+.twitter {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.team__list {
-  list-style: none;
-  padding: 0;
-
-  &-item {
-    display: inline-flex;
-    flex-direction: column;
-    margin: 50px;
-  }
-  &-img {
-    width: 250px;
-    height: 250px;
-    background: blue;
-    border-radius: 50%
-  }
-}
-
-.the-team {
-  min-height: 100vh;
-  background: lightgrey;
-}
-
-.the-challenge {
-  min-height: 100vh;
-  background: lightgreen;
-}
-
-.the-process {
-  min-height: 100vh;
-  background: lightcoral;
-}
-
-.the-pitch {
-  min-height: 100vh;
-  background: lightblue;
-
-  &__video {
-    width: 60%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    position: relative;
-
-    &-container {
-      bottom: 0;
-      display: block;
-      left: 0;
-      position: relative;
-      right: 0;
-      top: 0;
-
-      &::before {
-        content: '';
-        display: block;
-        padding-bottom: 56.25%;
-        width: 100%;
-      }
-
-      & iframe {
-        border: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-      }
-    }
-  }
+.tweet {
+  margin: 20px 50px;
 }
