@@ -3,6 +3,7 @@ import Quote from './Quote';
 import InfoCard from './InfoCard';
 import img1 from '../assets/images/challenge-1.jpg';
 import img2 from '../assets/images/challenge-2.jpg';
+import img3 from '../assets/images/challenge-3.jpg';
 
 const challenges = {
   quotes: [
@@ -14,22 +15,28 @@ const challenges = {
     {
       imgSource: img1,
       alt: 'Federation Square',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      text: 'Posed with the above question, 60 members of the public sharing a common love for the city of Melbourne came together and formed into 10 teams for Hack Fed Square, a design hack competition run by Fed Square and Marketing Entourage as part of Melbourne Knowledge Week, competing against each other and a tight eight hour deadline to come up with innovative concepts to address this problem statement.',
       isRightAligned: false
     },
     {
       imgSource: img2,
-      alt: 'Federation Square branding',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      alt: 'Federation Square\'s Reshaping Your Experiences branding',
+      text: 'Faced with increased competition from neighbouring live sites, culinary precincts and event offerings coupled with decreased visitation, we were tasked with dreaming up ways to create engaging and participatory experiences integrating pre-existing and new technologies that celebrate its "Anything But Square" brand style, voice and concept. The ultimate goal was reframe public perception of Fed Square as a vibrant, ever-changing, cultural hub with a focus on community and sustainability, cementing its position as a iconic Melburnian destination.',
       isRightAligned: true
+    },
+    {
+      imgSource: img3,
+      alt: 'Federation Square screen',
+      text: 'Much like city and space itself, our team Fed Up represented a kaleidoscope of Melburnians from a broad range of backgrounds and destinations - born and bred locals, interstate adopters and expats from abroad - ultimately defining our target user: self-identified Melburnians seeking substantive experiences.',
+      isRightAligned: false
     }
   ]
 }
 
 const TheChallenge = () => {
   return (
-    <section className="the-challenge">
-      <h1>The Challenge</h1>
+    <section className="section-content the-challenge">
+      <h1 className="section-header">The Challenge</h1>
       <Quote
         quoteText={challenges.quotes[0].quoteText}
       />

@@ -41,25 +41,8 @@ $colors: (
 
 // FONT VARIABLES
 
-$heading-font: 'Source+Sans+Pro', sans-serif;
-$sub-head-font: 'rubik', sans-serif;
+$heading-font: 'rubik', sans-serif;
 $body-font: 'Source+Sans+Pro', sans-serif;
 
-// DEFAULT FONTS STYLES
-
-p, a {
-  font-family: $body-font;
-  font-style: normal;
-}
-
-h1, h2, h3, h4, h5, h6  {
-  font-family: $heading-font;
-}
-
-blockquote, q {
-  font-family: $sub-head-font;
-  font-size: 25px;
-  font-weight: 600;
-}
-
 // PAGE STYLES
+$content-width: 1000px;

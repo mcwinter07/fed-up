@@ -4,12 +4,12 @@ import Logo from '../../src/assets/logo.svg';
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <section className="section-content intro">
       <Icon
         iconClass='intro__team-icon'
         iconSource={Logo}
       />
-    </div>
+    </section>
   )
 }
 
