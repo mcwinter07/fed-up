@@ -30,37 +30,34 @@
   }
 }
 
-.the-pitch {
+.video {
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: relative;
 
-  &__video {
-    width: 60%;
-    left: 50%;
-    transform: translate(-50%, 0);
+  &-container {
+    bottom: 0;
+    display: block;
+    left: 0;
     position: relative;
+    right: 0;
+    top: 0;
 
-    &-container {
-      bottom: 0;
+    &::before {
+      content: '';
       display: block;
+      padding-bottom: 56.25%;
+      width: 100%;
+    }
+
+    & iframe {
+      border: 0;
+      height: 100%;
       left: 0;
-      position: relative;
-      right: 0;
+      position: absolute;
       top: 0;
-
-      &::before {
-        content: '';
-        display: block;
-        padding-bottom: 56.25%;
-        width: 100%;
-      }
-
-      & iframe {
-        border: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 }
@@ -115,4 +112,13 @@
       clip-path: polygon(0 15%, 88% 13%, 89% 84%, 12% 100%);
     }
   }
+}
+
+.twitter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tweet {
+  margin: 20px 50px;
 }

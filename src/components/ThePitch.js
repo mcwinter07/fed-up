@@ -1,5 +1,6 @@
 import React from 'react';
 import Quote from './Quote';
+import VideoFrame from './VideoFrame';
 import InfoCard from './InfoCard';
 import PitchCard from './PitchCard';
 import img1 from '../assets/images/pitch-1.jpg';
@@ -50,37 +51,35 @@ const solutions = {
 const ThePitch = () => {
   return (
     <section className="the-pitch">
-      <div className="the-pitch__video">
-        <div className="the-pitch__video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/sOJe3XRowmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    <h1>The Process</h1>
-    <Quote
-      quoteText={solutions.quotes[0].quoteText}
-    />
-    {solutions.articles.map(article => {
-      const { imgSource, alt, text, isRightAligned } = article;
-      return (
-        <InfoCard
-          imgSource={imgSource}
-          alt={alt}
-          text={text}
-          isRightAligned={isRightAligned}
-        />
-      )
-    })}
-    {solutions.prototypes.map(prototype => {
-      const { imgSource, alt, text } = prototype;
-      return (
-        <PitchCard
-          imgSource={imgSource}
-          alt={alt}
-          text={text}
-        />
-      )
-    })}
-  </section>
+      <h1>The Pitch</h1>
+      <VideoFrame
+        vidSource='https://www.youtube.com/embed/sOJe3XRowmY'
+      />
+      <Quote
+        quoteText={solutions.quotes[0].quoteText}
+      />
+      {solutions.articles.map(article => {
+        const { imgSource, alt, text, isRightAligned } = article;
+        return (
+          <InfoCard
+            imgSource={imgSource}
+            alt={alt}
+            text={text}
+            isRightAligned={isRightAligned}
+          />
+        )
+      })}
+      {solutions.prototypes.map(prototype => {
+        const { imgSource, alt, text } = prototype;
+        return (
+          <PitchCard
+            imgSource={imgSource}
+            alt={alt}
+            text={text}
+          />
+        )
+      })}
+    </section>
   )
 }
 
