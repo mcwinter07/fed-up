@@ -6,3 +6,15 @@
 .tweet {
   margin: 20px 50px;
 }
+
+.the-result {
+  &__image {
+    max-width: 900px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+    & img {
+      width: 100%;
+    }
+  }
+}

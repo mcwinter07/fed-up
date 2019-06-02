@@ -1,12 +1,14 @@
 import React from 'react';
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton }from 'react-twitter-embed';
+import { TwitterTweetEmbed } from 'react-twitter-embed';
 import img1 from '../assets/images/winners.jpg';
 
 const TheResult = () => {
   return (
     <section className="the-result">
       <h1>The Result</h1>
-      <img src={img1} alt=""/>
+      <div className="the-result__image">
+        <img src={img1} alt=""/>
+      </div>
       <div className="twitter">
         <div className="tweet">
           <TwitterTweetEmbed
