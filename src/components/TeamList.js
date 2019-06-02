@@ -51,7 +51,7 @@ const Team = () => {
 
   console.log(teamFedUp)
   return (
-    <div>
+    <section className="the-team">
       <h1>Meet the Team</h1>
       <ul className="team__list">
         {teamFedUp.teamMembers.map(member => {
@@ -67,7 +67,7 @@ const Team = () => {
         )})
       }
       </ul>
-    </div>
+    </section>
   )
 }
 
