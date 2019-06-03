@@ -21,19 +21,19 @@ const solutions = {
     {
       imgSource: img1,
       alt: 'Fed Up team member Tush pitching to the judges',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      text: 'Breaking up Fed Square into thematic zones representing a kaleidoscope of colours and experiences on offer at the space much like the city itself, our concept used augmented reality through both a physical kaleidoscope install and digital application to bring Fed Square\'s values of sustainability, history/tradition, and arts/culture to life via a digital garden, Aboriginal Dreamtime imagery and stories and interactive art in a mixed reality setting.',
       isRightAligned: false
     },
     {
       imgSource: img2,
       alt: 'Fed Up team member TJ answering questions from the judges',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      text: 'By blurring the lines between the augmented and actual world through both a digital and physical install, the space could increase community engagement and connection to the place and people through culture by creating a participatory, immersive and unpredictable mixed reality experience that could be easily accessed by a wide range of people, irrespective of age or technical ability/means.',
       isRightAligned: true
     },
     {
       imgSource: img3,
       alt: 'Fed Up team member TJ answering questions from the judges',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      text: 'The flexibility of the kaleidoscope metaphor allowed the concept to have a consistent thematic throughline yet be changeable and extendable throughout its lifetime of implementation. By increasing the foot traffic and dwell time of visitors, Fed Square would become more attractive to prospective tenants and sponsors',
       isRightAligned: false
     }
   ],
@@ -41,17 +41,17 @@ const solutions = {
     {
       imgSource: img4,
       alt: 'Our mixed reality prototype of a digital garden',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.'
+      text: 'Juxtaposed against the so-called concrete jungle of the Atrium walls, a digital garden to promote sustainability, tranquility and connection in a mutual meditative space.'
     },
     {
       imgSource: img5,
-      alt: 'Our mixed reality prototype for Aboriginal dreamtime art and storytelling',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.'
+      alt: 'Our mixed reality prototype for Aboriginal Dreamtime art and storytelling',
+      text: 'Combining Aboriginal imagery and spoken word narration of Dreamtime stories and Indigenous history of the land visitors are standing to give a richer and more contextual experience.'
     },
     {
       imgSource: img6,
       alt: 'Our mixed reality prototype for interactive art',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.'
+      text: 'Celebrating the rich cultural contributions of the city by encouraging users to interact with Fed Square through virtual art, and share and collaborate with others to create a digital archive.'
     }
   ]
 }

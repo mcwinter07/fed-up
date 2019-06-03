@@ -15,7 +15,7 @@ const challenges = {
     {
       imgSource: img1,
       alt: 'Federation Square',
-      text: 'Posed with the above question, 60 members of the public sharing a common love for the city of Melbourne came together and formed into 10 teams for Hack Fed Square, a design hack competition run by Fed Square and Marketing Entourage as part of Melbourne Knowledge Week, competing against each other and a tight eight hour deadline to come up with innovative concepts to address this problem statement.',
+      text: 'Posed with the above question to answer in eight hours, 60 members of the public sharing a common love for the city of Melbourne came together and formed into 10 teams for Hack Fed Square, a design hack competition run by Fed Square and Marketing Entourage as part of Melbourne Knowledge Week, competing against each other and a tight eight hour deadline to come up with innovative concepts to address this problem statement and pitch to a judging panel.',
       isRightAligned: false
     },
     {
