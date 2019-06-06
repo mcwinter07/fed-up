@@ -32,8 +32,8 @@ const solutions = {
     },
     {
       imgSource: img3,
-      alt: 'Fed Up team member TJ answering questions from the judges',
-      text: 'The flexibility of the kaleidoscope metaphor allowed the concept to have a consistent thematic throughline yet be changeable and extendable throughout its lifetime of implementation. By increasing the foot traffic and dwell time of visitors, Fed Square would become more attractive to prospective tenants and sponsors',
+      alt: 'Fed Up group hug after the win!',
+      text: 'The flexibility of the kaleidoscope metaphor allowed the concept to have a consistent thematic throughline yet be changeable and extendable throughout its lifetime of implementation. By increasing the foot traffic and dwell time of visitors, Fed Square would become more attractive to prospective tenants and sponsors.',
       isRightAligned: false
     }
   ],
@@ -70,6 +70,7 @@ const ThePitch = () => {
         const { imgSource, alt, text, isRightAligned } = article;
         return (
           <InfoCard
+            key={alt}
             imgSource={imgSource}
             alt={alt}
             text={text}
@@ -81,6 +82,7 @@ const ThePitch = () => {
         const { imgSource, alt, text } = prototype;
         return (
           <PitchCard
+            key={alt}
             imgSource={imgSource}
             alt={alt}
             text={text}

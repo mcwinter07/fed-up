@@ -49,7 +49,6 @@ const Team = () => {
     ]
   }
 
-  console.log(teamFedUp)
   return (
     <section className="section-content the-team">
       <h1 className="section-header">Meet the Team</h1>
