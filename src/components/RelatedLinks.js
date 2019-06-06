@@ -2,10 +2,10 @@ import React from 'react';
 import Swiper from 'react-id-swiper';
 import { Pagination, Navigation } from 'swiper/dist/js/swiper.esm';
 import SwiperCard from './SwiperCard';
-// import MediaSwiper from './MediaSwiper';
 import img1 from '../assets/images/links-1.jpg';
 import img2 from '../assets/images/links-2.jpg';
 import img3 from '../assets/images/links-3.jpg';
+import { throwStatement } from '@babel/types';
 
 const RelatedLinks = () => {
   const media = {
@@ -43,7 +43,7 @@ const RelatedLinks = () => {
       el: '.swiper-pagination',
       clickable: true,
       // dynamicBullets: true
-    }
+    },
     // navigation: {
     //   nextEl: '.swiper-button-next',
     //   prevEl: '.swiper-button-prev'
@@ -52,11 +52,12 @@ const RelatedLinks = () => {
 
   return (
     <section className="related-links">
-      <Swiper {...params}>
+      <Swiper {...params} >
       {/* {media.articles.map(article => {
         const { title, writer, image, url } = article;
         return (
           <SwiperCard
+            key={title}
             title = {title}
             writer={writer}
             image={image}
@@ -66,14 +67,13 @@ const RelatedLinks = () => {
       })} */}
 
       {media.articles.map(article => {
-        const { title, source, writer, writerHandle, image, url } = article;
+        const { title, writer, image, url } = article;
         return (
-        <div className="article-card">
-          
+        <div className="article-card" key={title}>
           <h4 className="article-name">{title}</h4>
           <h4 className="article-writer">{writer}</h4>
           <a href={url}>
-            <img src={image} alt=""/>
+            <img src={image} alt={title}/>
           </a>
         </div>
       )})}

@@ -44,6 +44,7 @@ const TheChallenge = () => {
         const { imgSource, alt, text, isRightAligned } = article;
         return (
           <InfoCard
+            key={alt}
             imgSource={imgSource}
             alt={alt}
             text={text}

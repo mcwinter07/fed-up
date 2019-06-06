@@ -56,6 +56,7 @@ const TheResult = () => {
             const { tweetId, options } = tweet;
             return (
               <TwitterTweetEmbed
+                key={tweetId}
                 tweetId={tweetId}
                 options={options}
               />

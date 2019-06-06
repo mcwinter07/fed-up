@@ -27,7 +27,7 @@ const processes = {
     },
     {
       imgSource: img3,
-      alt: 'Work on laptops and post it notes',
+      alt: 'Fed Up team members Tim, Linda and TJ in discussion',
       text: 'Under the tutelage of our sage and knowing mentors from Marketing Entourage and PHORIA, a floodgate of ideas poured itself onto countless post-its decorating the walls of Deakin\'s Edge. Tempered by a ticking time clock and dose of reality, we eventually consolidated our ideas into a central core concept for our pitch.',
       isRightAligned: false
     }
@@ -48,6 +48,7 @@ const processes = {
         const { imgSource, alt, text, isRightAligned } = article;
         return (
           <InfoCard
+            key={alt}
             imgSource={imgSource}
             alt={alt}
             text={text}
