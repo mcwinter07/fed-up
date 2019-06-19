@@ -1,29 +1,28 @@
-// COMPONENTS
-
-// VARIABLES
+// VARIABLES: GUTTERS, COLOURS & FONT DEFINITIONS
 @import './variables';
 
 // TYPOGRAPHY
 @import './typography';
 
-// UTILITIES
+// UTILITY FUNCTIONS
 @import './utilities';
 
-// PACKAGE STYLES
+// THIRD-PARTY PACKAGE STYLES
 @import './swiper-package';
 
-// COMPONENTS
-
+// PAGE COMPONENTS
+@import './section-content';
 @import './intro';
+@import './team-list';
+@import './result';
+@import './made-by';
+
+// SUB-COMPONENTS
+@import './icon';
 @import './info-card';
+@import './quote';
+@import './image';
 @import './pitch-card';
 @import './video';
-@import './team-list';
-@import './quote';
-@import './result';
 @import './twitter';
-@import './image';
-@import './made-by';
 @import './swiper';
-
-@import './section-content';

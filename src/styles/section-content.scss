@@ -1,29 +1,41 @@
 .App {
   text-align: center;
-  background: color(bg);
+  width: 100%;
+  background: radial-gradient(lightgrey 4px, transparent 4px) 0 0;
+  background-size: 45px 45px;
 }
 
 .section-content {
   max-width: $content-width;
-  margin: 0 auto;
-}
-
-.the-team {
+  margin: 0 auto; // adds padding on both sides to fill space (must be fixed width)
   min-height: 100vh;
-  background: lightgrey;
-}
-
-.the-challenge {
-  min-height: 100vh;
-  background: lightgreen;
-}
-
-.the-process {
-  min-height: 100vh;
-  background: color(primary);
-}
-
-.the-pitch {
-  min-height: 100vh;
-  background: lightblue;
+  &--intro {
+    background: color(intro);
+    display: flex;
+    flex-direction: column; // make main axis vertical instead of side-by-side
+    justify-content: center; // center items vertically
+    align-items: center; // center items horizontally
+    h1 {
+      font-weight: 800;
+      color: color(heading)
+    }
+  }
+  &--the-team {
+    background: lightgrey;
+  }
+  &--the-challenge {
+    background: lightgreen;
+  }
+  &--the-process {
+    background: color(primary);
+  }
+  &--the-pitch {
+    background: lightblue;
+  }
+  &--the-result {
+    background: lightcoral;
+  }
+  &--related-links {
+    background: color(link-variant, heavy, hover);
+  }
 }

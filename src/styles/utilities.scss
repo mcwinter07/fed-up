@@ -1,5 +1,4 @@
-// map-deep-get allows for accessing deeply nested scss variables
-
+// map-get-deep allows for accessing deeply nested scss variables
 @function map-get-deep($map, $keys...) {
   @if length($keys) == 1 {
     $keys: nth($keys, 1);
@@ -26,14 +25,13 @@
 }
 
 // gutter allows us to standardize our spacing between elements
-
+// padding-right: gutter(2, large);
 @function gutter($multiplier: 1, $size: medium) {
   // $pixels: 
   @return map-get($spacers, $size) * $multiplier;
 }
 
-
-// color will grab the colours defined in our palette
+// map-get-deep is a custom function, references the $colors map and can take multiple keys as params to access deeply nested colour variables
 @function color($keys...) {
   $value: map-get-deep($colors, $keys);
   @return $value;
