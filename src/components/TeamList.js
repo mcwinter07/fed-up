@@ -50,7 +50,7 @@ const Team = () => {
   }
 
   return (
-    <section className="section-content the-team">
+    <section className="section-content section-content--the-team">
       <h1 className="section-header">Meet the Team</h1>
       <ul className="team__list">
         {teamFedUp.teamMembers.map(member => {

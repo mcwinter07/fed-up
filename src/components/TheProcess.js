@@ -36,7 +36,7 @@ const processes = {
 
  const TheProcess = () => {
   return (
-    <section className="section-content the-process">
+    <section className="section-content section-content--the-process">
       <h1 className="section-header">The Process</h1>
       <VideoFrame
         vidSource='https://www.youtube.com/embed/nAPXecjQAjY?controls=0'

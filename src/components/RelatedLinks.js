@@ -50,7 +50,7 @@ const RelatedLinks = () => {
   };
 
   return (
-    <section className="related-links">
+    <section className="section-content section-content--related-links">
       <Swiper {...params} >
       {/* FIXME: Rendering issue when .map used with SwiperCard component */}
       {/* {media.articles.map(article => {
