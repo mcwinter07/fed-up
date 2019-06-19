@@ -6,12 +6,13 @@ const VideoFrame = (props) => {
     <div className="video">
       <div className="video-container">
         <iframe
+          key={vidSource}
           width="560"
           height="315"
           src={vidSource}
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         />
       </div>
     </div>

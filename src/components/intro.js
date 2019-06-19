@@ -4,7 +4,7 @@ import Logo from '../../src/assets/logo.svg';
 
 const Intro = () => {
   return (
-    <section className="intro">
+    <section className="section-content intro">
       <Icon
         iconClass='intro__team-icon'
         iconSource={Logo}

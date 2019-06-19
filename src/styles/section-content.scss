@@ -3,6 +3,11 @@
   background: color(bg);
 }
 
+.section-content {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
 .the-team {
   min-height: 100vh;
   background: lightgrey;

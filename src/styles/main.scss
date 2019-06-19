@@ -3,8 +3,14 @@
 // VARIABLES
 @import './variables';
 
+// TYPOGRAPHY
+@import './typography';
+
 // UTILITIES
 @import './utilities';
+
+// PACKAGE STYLES
+@import './swiper-package';
 
 // COMPONENTS
 
@@ -15,5 +21,9 @@
 @import './team-list';
 @import './quote';
 @import './result';
+@import './twitter';
+@import './image';
+@import './made-by';
+@import './swiper';
 
-@import './section-container';
+@import './section-content';

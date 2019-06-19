@@ -1,0 +1,11 @@
+.image {
+  &__container {
+    max-width: 900px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+    & img {
+      width: 100%;
+    }
+  }
+}
