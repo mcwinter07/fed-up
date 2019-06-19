@@ -1,11 +1,10 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
 import { Pagination, Navigation } from 'swiper/dist/js/swiper.esm';
-import SwiperCard from './SwiperCard';
+// import SwiperCard from './SwiperCard';
 import img1 from '../assets/images/links-1.jpg';
 import img2 from '../assets/images/links-2.jpg';
 import img3 from '../assets/images/links-3.jpg';
-import { throwStatement } from '@babel/types';
 
 const RelatedLinks = () => {
   const media = {
@@ -53,6 +52,7 @@ const RelatedLinks = () => {
   return (
     <section className="related-links">
       <Swiper {...params} >
+      {/* FIXME: Rendering issue when .map used with SwiperCard component */}
       {/* {media.articles.map(article => {
         const { title, writer, image, url } = article;
         return (
@@ -65,7 +65,7 @@ const RelatedLinks = () => {
           />
         )
       })} */}
-
+      
       {media.articles.map(article => {
         const { title, writer, image, url } = article;
         return (
