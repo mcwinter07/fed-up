@@ -9,19 +9,27 @@
   max-width: $content-width;
   margin: 0 auto; // adds padding on both sides to fill space (must be fixed width)
   min-height: 100vh;
+  h1 {
+    color: color(heading);
+  }
   &--intro {
     background: color(intro);
     display: flex;
     flex-direction: column; // make main axis vertical instead of side-by-side
     justify-content: center; // center items vertically
     align-items: center; // center items horizontally
-    h1 {
-      font-weight: 800;
-      color: color(heading)
-    }
   }
   &--the-team {
     background: lightgrey;
+    .section-header__wrapper {
+      background: color(heading-bg);
+      // clip-path: polygon(0 66%, 100% 59%, 92% 100%, 7% 100%);
+
+
+      h1 {
+        height: 100px;
+      }
+    }
   }
   &--the-challenge {
     background: lightgreen;

@@ -67,6 +67,7 @@ $colors: (
     )
   ),
   heading: map-get($palette, white),
+  heading-bg: map-get($palette, fed-grape),
   intro: map-get($palette, fed-green)
 );
 
