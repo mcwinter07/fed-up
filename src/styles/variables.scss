@@ -4,6 +4,13 @@
 // PAGE STYLES
 $content-width: 1000px;
 
+$breakpoints: (
+  sm: 425px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px
+);
+
 // GUTTERS
 $spacers: (
   small: 8px,

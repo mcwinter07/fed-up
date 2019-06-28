@@ -1,33 +1,94 @@
 .App {
   text-align: center;
   width: 100%;
-  background: radial-gradient(lightgrey 4px, transparent 4px) 0 0;
-  background-size: 45px 45px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(lightgrey 4px, transparent 4px) 0 0;
+    background-size: 45px 45px;
+    z-index: -100;
+  }
 }
 
 .section-content {
   max-width: $content-width;
   margin: 0 auto; // adds padding on both sides to fill space (must be fixed width)
   min-height: 100vh;
+
   h1 {
     color: color(heading);
   }
+
   &--intro {
     background: color(intro);
     display: flex;
     flex-direction: column; // make main axis vertical instead of side-by-side
     justify-content: center; // center items vertically
     align-items: center; // center items horizontally
+    overflow: hidden;
+    height: 1000px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(lightgrey 4px, transparent 4px) 0 0;
+      background-size: 45px 45px;
+      z-index: 10;
+      opacity: .3;
+    }
   }
   &--the-team {
-    background: lightgrey;
-    .section-header__wrapper {
-      background: color(heading-bg);
-      // clip-path: polygon(0 66%, 100% 59%, 92% 100%, 7% 100%);
 
+    .section-header {
+      display: block;
+      position: relative;
 
-      h1 {
+      &__title {
+        z-index: 1;
+        color: blue;
+      }
+
+      &__svg {
+        width: 100px;
         height: 100px;
+        background: url('../assets/accessible-icon-brands.svg'), purple;
+        background-size: 30%;
+        background-position: center center;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        transition: .4s;
+
+        &:hover {
+          background-size: 70%;
+          background-position: 100vw center;
+          background-repeat: repeat-x;
+
+          transition: .4s;
+        }
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        background: rebeccapurple;
+        opacity: 1;
+        height: 150px;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        clip-path: polygon(4% 29%, 100% 0, 99% 90%, 0 91%);
+        z-index: -10;
       }
     }
   }
