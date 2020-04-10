@@ -1,12 +1,24 @@
-// FONT IMPORTS
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Rubik|Source+Sans+Pro:700&display=swap');
+// IMPORTS
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700,800|Rubik&display=swap');
+
+// PAGE STYLES
+$content-width: 1000px;
+
+// GUTTERS
 $spacers: (
   small: 8px,
   medium: 16px,
   large: 24px,
 );
 
+// COLOUR PALETTE
 $palette: (
+  fed-green: #00c3b6,
+  fed-yellow: #ffd83b,
+  fed-pink: #ffb2d6,
+  fed-violet: #a300ad,
+  fed-grape: #53387a,
+  fed-aubergine: #34074f,
   burgundy: #a4343a,
   flamingo: #ff485b,
   coral: #e84a37,
@@ -26,40 +38,38 @@ $palette: (
   light-grey: #d2d2d2,
   very-light-grey: #f8f7f6,
   white: #fff,
-  transparent: rgba(0, 0, 0, 0)
+  transparent: rgba(0, 0, 0, 0),
 );
 
+// COLOUR ASSIGNMENTS
+// sass maps hold a collection of key/value pairs in a variable name
+// map-get() takes two params: name of map and the key, i.e. from the $palette map
 $colors: (
   bg: map-get($palette, flamingo),
   primary: map-get($palette, lemon),
-  secondary: map-get($palette, deep-blue),
+  secondary: map-get($palette, flamingo),
   tertiary: map-get($palette, light-beige),
   link: map-get($palette, blue),
-  link-hover: map-get($palette, deep-blue)
+  link-hover: map-get($palette, flamingo),
+  video: (
+    background: map-get($palette, dusty-teal)
+  ),
+  link-variant: (
+    heavy: (
+      default: map-get($palette, flamingo),
+      hover: map-get($palette, blue),
+      visited: map-get($palette, flamingo),
+    ),
+    light: (
+      default: map-get($palette, flamingo),
+      hover: map-get($palette, blue),
+      visited: map-get($palette, flamingo),
+    )
+  ),
+  heading: map-get($palette, white),
+  intro: map-get($palette, fed-green)
 );
 
-
 // FONT VARIABLES
-
-$heading-font: 'Source+Sans+Pro', sans-serif;
-$sub-head-font: 'rubik', sans-serif;
-$body-font: 'Source+Sans+Pro', sans-serif;
-
-// DEFAULT FONTS STYLES
-
-p, a {
-  font-family: $body-font;
-  font-style: normal;
-}
-
-h1, h2, h3, h4, h5, h6  {
-  font-family: $heading-font;
-}
-
-blockquote, q {
-  font-family: $sub-head-font;
-  font-size: 25px;
-  font-weight: 600;
-}
-
-// PAGE STYLES
+$heading-font: 'Fira Sans', sans-serif;
+$body-font: 'Rubik', sans-serif;

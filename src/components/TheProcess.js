@@ -4,6 +4,7 @@ import InfoCard from './InfoCard';
 import VideoFrame from './VideoFrame';
 import img1 from '../assets/images/process-1.jpg';
 import img2 from '../assets/images/process-2.jpg';
+import img3 from '../assets/images/process-3.jpg';
 
 const processes = {
   quotes: [
@@ -15,22 +16,28 @@ const processes = {
     {
       imgSource: img1,
       alt: 'Fed Up team members Michael, Fotima and Linda',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      text: 'The heart of the creative process for the hack involved applying human-centred design thinking to identify and address a challenge for Fed Square that was open-ended, complex and loosely defined: namely how to deliver revenue-generating cultural experiences emblematic of Melbourne that will position Fed Square as a hub for creativity and innovation.',
       isRightAligned: false
     },
     {
       imgSource: img2,
       alt: 'Work on laptops and post it notes',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque deleniti enim, repudiandae a quae culpa veniam atque dicta ad illum porro, exercitationem labore ex ipsam excepturi est sint consequatur.',
+      text: 'Following an iterative design process to understand the human needs involved, reframe the problem in human-centric ways, brainstorm solutions and adopt a hands-on approach to prototyping and testing our ideas and assumptions, we applied the kaleidoscope metaphor figuratively and quite literally to our final concept as we felt this perfectly represented the vibrant and multi-faceted nature of the space and city.',
       isRightAligned: true
+    },
+    {
+      imgSource: img3,
+      alt: 'Fed Up team members Tim, Linda and TJ in discussion',
+      text: 'Under the tutelage of our sage and knowing mentors from Marketing Entourage and PHORIA, a floodgate of ideas poured itself onto countless post-its decorating the walls of Deakin\'s Edge. Tempered by a ticking time clock and dose of reality, we eventually consolidated our ideas into a central core concept for our pitch.',
+      isRightAligned: false
     }
   ]
 }
 
- const TheProcess = () =>{
+ const TheProcess = () => {
   return (
-    <section className="the-process">
-      <h1>The Process</h1>
+    <section className="section-content section-content--the-process">
+      <h1 className="section-header">The Process</h1>
       <VideoFrame
         vidSource='https://www.youtube.com/embed/nAPXecjQAjY?controls=0'
       />
@@ -41,6 +48,7 @@ const processes = {
         const { imgSource, alt, text, isRightAligned } = article;
         return (
           <InfoCard
+            key={alt}
             imgSource={imgSource}
             alt={alt}
             text={text}

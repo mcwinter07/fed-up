@@ -1,14 +1,5 @@
-.twitter {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tweet {
-  margin: 20px 50px;
-}
-
-.the-result {
-  &__image {
+.image {
+  &__container {
     max-width: 900px;
     left: 50%;
     position: relative;

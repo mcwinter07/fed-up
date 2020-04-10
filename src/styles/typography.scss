@@ -1,0 +1,18 @@
+// DEFAULT FONTS STYLES
+p, a {
+  font-family: $body-font;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: $heading-font;
+}
+
+blockquote, q {
+  font-family: $heading-font;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.section-header {
+  font-size: 60px;
+}
