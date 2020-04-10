@@ -8,6 +8,13 @@
 .section-content {
   max-width: $content-width;
   margin: 0 auto; // adds padding on both sides to fill space (must be fixed width)
+
+  .section-header {
+    background-color: lightseagreen;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
   min-height: 100vh;
   &--intro {
     background: color(intro);
@@ -22,6 +29,9 @@
   }
   &--the-team {
     background: lightgrey;
+    .section-header {
+      width: 450px;
+    }
   }
   &--the-challenge {
     background: lightgreen;

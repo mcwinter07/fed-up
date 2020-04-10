@@ -7,9 +7,6 @@ import profileImgTj from '../assets/images/team-tj.jpg';
 import profileImgTushara from '../assets/images/team-tushara.jpg';
 import profileImgWinter from '../assets/images/team-winter.jpg';
 
-import SVG from './SVG';
-
-// import { ReactComponent as ProfileIconBeaker } from '../assets/icons/beaker.svg';
 import profileIconBeaker from '../assets/icons/beaker.svg';
 import profileIconBrain from '../assets/icons/brain.svg';
 import profileIconPencil from '../assets/icons/pencil.svg';
@@ -71,21 +68,19 @@ const Team = () => {
         {teamFedUp.teamMembers.map((member, index) => {
           const { name, profileImage, title, icon, linkedIn } = member
 
-          const indices = [0, 1, 2, 3, 4, 5]
           const modifier = index => {
             const position = index + 1
             if (position % 3 === 0) {
-              return "third"
+              return "child-3"
             } else if ((position + 1) % 3 === 0) {
-              return "second"
+              return "child-2"
             } else {
-              return ""
+              return "child-1"
             }
           }
-          // console.log(index)
-          console.log(indices.map(number => modifier(number)))
           return (
           <TeamProfile
+            modifierClass={modifier(index)}
             teamProfileImage={profileImage}
             linkedIn={linkedIn}
             teamProfileName={name}
