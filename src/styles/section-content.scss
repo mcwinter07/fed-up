@@ -12,14 +12,15 @@
   .section-header {
     margin-left: auto;
     margin-right: auto;
-    display: inline-flex;
+    display: inline-flex; // fill to length - will the entirety of its content, and no more
     // background-color: dodgerblue;
   }
   // TODO: Check this placement of min-height??
   min-height: 100vh;
 
   h1 {
-    color: color(heading-text)
+    background-color: color(heading-background);
+    color: color(heading-text);
   }
 
   &--intro {
@@ -34,12 +35,14 @@
       max-height: 450px;
     }
 
-    h1 {
+    .home-header {
       font-weight: 800;
+      background: none;
     }
   }
 
   &--the-team {
+    // FIXME: Transfer/remove to text/img cards
     // background: lightgrey;
     // .section-header {
     //   position: relative;
@@ -58,34 +61,67 @@
     //     bottom: 10px;
     //     z-index: -1;
     //   }
-
-      h1 {
-        z-index: 1;
-        background-color: color(heading-background);
-        clip-path: polygon(0 21%, 100% 8%, 97% 88%, 3% 100%);
-        padding: 35px 20px 20px;
-        margin: 30px 0;
-      }
     // }
+
+    h1 {
+      // z-index: 1;
+      clip-path: polygon(0 21%, 100% 8%, 97% 88%, 3% 100%);
+      padding: 45px 35px 35px;
+      margin: 30px 0;
+    }
   }
 
   &--the-challenge {
-    background: lightgreen;
+    // background: lightgreen;
+    h1 {
+      clip-path: polygon(7% 11%, 100% 24%, 97% 85%, 0 94%);
+      padding: 55px 45px 35px 50px;
+      margin: 0;
+    }
   }
 
   &--the-process {
-    background: color(primary);
+    // background: color(primary);
+    h1 {
+      clip-path: polygon(2% 12%, 100% 10%, 99% 90%, 5% 72%);
+      padding: 30px 40px 40px 55px;
+      margin: 0;
+    }
   }
 
   &--the-pitch {
-    background: lightblue;
+    // background: lightblue;
+    h1 {
+      clip-path: polygon(0 9%, 98% 24%, 91% 73%, 4% 83%);
+      padding: 40px 55px 50px 40px;
+      margin: 0;
+    }
   }
 
   &--the-result {
-    background: lightcoral;
+    // background: lightcoral;
+    h1 {
+      clip-path: polygon(3% 9%, 100% 9%, 100% 81%, 7% 91%);
+      padding: 40px 40px 45px 55px;
+      margin: 0;
+    }
+  }
+
+  &--the-result {
+    // background: lightcoral;
+    h1 {
+      clip-path: polygon(3% 9%, 100% 9%, 100% 81%, 7% 91%);
+      padding: 30px 35px 35px 50px;
+      margin: 0;
+    }
   }
 
   &--related-links {
-    background: color(link-variant, heavy, hover);
+    // background: color(link-variant, heavy, hover);
+    h1 {
+      clip-path: polygon(9% 14%, 86% 4%, 95% 92%, 7% 91%);
+      padding: 25px 45px 20px 45px;
+      margin: 0;
+    }
   }
 }

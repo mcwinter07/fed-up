@@ -8,10 +8,10 @@ const MadeBy = () => {
         <img src={img} alt="Site created by Michael and Linda"/>
       </a>
       <p>Site created by
-        {" "}
-        <a href="https://github.com/mcwinter07">Michael Winter</a>
+        {"  "}
+        <a className="github-link" href="https://github.com/mcwinter07">Michael Winter</a>
         {" and "}
-        <a href="https://github.com/linda-lai">Linda Lai</a>
+        <a className="github-link" href="https://github.com/linda-lai">Linda Lai</a>
       </p>
     </footer>
   )

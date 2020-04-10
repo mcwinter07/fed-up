@@ -23,7 +23,7 @@ const Intro = () => {
         />
       </button>
       <header className="section-homepage">
-        <h1>HACK FED SQUARE</h1>
+        <h1 className="home-header">HACK FED SQUARE</h1>
       </header>
     </section>
   )

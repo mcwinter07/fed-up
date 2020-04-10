@@ -1,4 +1,5 @@
 import React from 'react';
+import MadeBy from './MadeBy';
 import Swiper from 'react-id-swiper';
 import { Pagination, Navigation } from 'swiper/dist/js/swiper.esm';
 // import SwiperCard from './SwiperCard';
@@ -54,6 +55,9 @@ const RelatedLinks = () => {
 
   return (
     <section className="section-content section-content--related-links">
+      <header className="section-header">
+        <h1>LINKS</h1>
+      </header>
       <Swiper {...params} >
       {/* FIXME: Rendering issue when .map used with SwiperCard component */}
       {/* {media.articles.map(article => {
@@ -79,7 +83,8 @@ const RelatedLinks = () => {
             </a>
           </div>
         )})}
-      </Swiper> 
+      </Swiper>
+      <MadeBy />
     </section>
   )
 }

@@ -7,7 +7,6 @@ import TheProcess from './components/TheProcess';
 import ThePitch from './components/ThePitch';
 import TheResult from './components/TheResult';
 import RelatedLinks from './components/RelatedLinks';
-import MadeBy from './components/MadeBy';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
       <ThePitch />
       <TheResult />
       <RelatedLinks />
-      <MadeBy />
     </div>
   );
 }

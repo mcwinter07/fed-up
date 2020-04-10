@@ -21,7 +21,7 @@ it's called in from the topmost file of our application (App.js)
 @import './intro';
 @import './team-list';
 @import './result';
-@import './made-by';
+@import './related-links';
 
 // SUB-COMPONENTS
 @import './icon';
@@ -32,3 +32,4 @@ it's called in from the topmost file of our application (App.js)
 @import './video';
 @import './twitter';
 @import './swiper';
+@import './made-by.scss';
