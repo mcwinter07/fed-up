@@ -13,8 +13,10 @@ blockquote, q {
   font-weight: 600;
 }
 
+.section-homepage,
 .section-header {
   h1 {
     font-size: 60px;
+    color: color(intro)
   }
 }

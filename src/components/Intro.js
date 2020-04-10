@@ -22,7 +22,9 @@ const Intro = () => {
           iconSource={Logo}
         />
       </button>
-      <h1 className="section-header">HACK FED SQUARE</h1>
+      <header className="section-homepage">
+        <h1>HACK FED SQUARE</h1>
+      </header>
     </section>
   )
 }
