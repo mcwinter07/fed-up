@@ -27,24 +27,30 @@
       color: color(heading)
     }
   }
+
   &--the-team {
-    background: lightgrey;
+    // background: lightgrey;
     .section-header {
       width: 450px;
     }
   }
+
   &--the-challenge {
     background: lightgreen;
   }
+
   &--the-process {
     background: color(primary);
   }
+
   &--the-pitch {
     background: lightblue;
   }
+
   &--the-result {
     background: lightcoral;
   }
+
   &--related-links {
     background: color(link-variant, heavy, hover);
   }
