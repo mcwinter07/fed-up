@@ -63,6 +63,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    border: solid 0.2em white;
     margin-left: auto;
     margin-right: auto;
     margin-top: -35px;
@@ -71,6 +72,8 @@
     object {
       height: 30px;
       width: 30px;
+      border-width: 5px;
+      border-color: white;
     }
   }
 

@@ -59,7 +59,11 @@ const solutions = {
 const ThePitch = () => {
   return (
     <section className="section-content section-content--the-pitch">
-      <h1 className="section-header">The Pitch</h1>
+      <header className="section-header">
+        <header>
+          <h1>THE PITCH</h1>
+        </header>
+      </header>
       <VideoFrame
         vidSource='https://www.youtube.com/embed/sOJe3XRowmY'
       />

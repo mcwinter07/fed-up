@@ -36,7 +36,9 @@ const challenges = {
 const TheChallenge = () => {
   return (
     <section className="section-content section-content--the-challenge">
-      <h1 className="section-header">The Challenge</h1>
+      <header className="section-header">
+        <h1>THE CHALLENGE</h1>
+      </header>
       <Quote
         quoteText={challenges.quotes[0].quoteText}
       />
