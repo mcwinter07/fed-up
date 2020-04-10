@@ -54,7 +54,7 @@ const Team = () => {
       {
         name: 'Winter',
         profileImage: profileImgWinter,
-        title: 'Front-Stack Developer',
+        title: 'Front-End Developer',
         icon: profileIconSyntax,
         linkedIn: 'https://www.linkedin.com/in/mcwinter/'
       }
