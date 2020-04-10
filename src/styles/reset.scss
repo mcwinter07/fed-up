@@ -1,0 +1,10 @@
+button {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

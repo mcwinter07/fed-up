@@ -1,3 +1,8 @@
+/*
+main.scss calls in all Sass files to compile,
+it's called in from the topmost file of our application (App.js)
+*/
+
 // VARIABLES: GUTTERS, COLOURS & FONT DEFINITIONS
 @import './variables';
 
@@ -6,6 +11,7 @@
 
 // UTILITY FUNCTIONS
 @import './utilities';
+@import './reset.scss';
 
 // THIRD-PARTY PACKAGE STYLES
 @import './swiper-package';
