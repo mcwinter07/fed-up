@@ -7,7 +7,6 @@
     display: inline-flex;
     flex-direction: column;
     margin: 20px 30px;
-    // background: red;
   }
 
   &-link {
@@ -55,11 +54,11 @@
 
   .team__list-icon {
     background: color(team-icons);
-    // Creates a flexbox that fits to the width & height of the its own content
+    // Creates a Flexbox that fits to the width & height of the its own content
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    // To create a perfect square, the value for height/width/border-radius must be the same.
+    // To create a perfect square, the value for height/width/border-radius must be the same
     height: 50px;
     width: 50px;
     border-radius: 50%;

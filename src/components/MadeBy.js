@@ -5,7 +5,7 @@ const MadeBy = () => {
   return (
     <footer className="made-by">
       <a href="https://github.com/linda-lai/fed-up">
-        <img src={img} alt="Site created by Michael and Linda"/>
+        <img src={img} alt="Site created by Michael Winter and Linda Lai"/>
       </a>
       <p>Site created by
         {"  "}

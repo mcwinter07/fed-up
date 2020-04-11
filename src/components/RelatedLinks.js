@@ -12,6 +12,13 @@ const RelatedLinks = () => {
   const media = {
     articles: [
       {
+        title: 'Design Hack in Action: #HackFedSquare Recap',
+        source: 'Marketing Entourage',
+        writer: 'Carly Layton',
+        image: img3,
+        url: 'https://www.marketingentourage.com.au/blog/design-hack-in-action-hackfedsquare-recap'
+      },
+      {
         title: 'Ideas for the future flow at Hack Fed Square',
         source: 'Campaign Brief',
         writer: 'Ricki Green',
@@ -26,13 +33,6 @@ const RelatedLinks = () => {
         writerHandle: 'https://medium.com/@artofboth',
         image: img2,
         url: 'https://medium.com/@artofboth/ideas-for-the-future-of-a-cultural-precinct-d24a1b584d3b'
-      },
-      {
-        title: 'Design Hack in Action: #HackFedSquare Recap',
-        source: 'Marketing Entourage',
-        writer: 'Carly Layton',
-        image: img3,
-        url: 'https://www.marketingentourage.com.au/blog/design-hack-in-action-hackfedsquare-recap'
       },
       {
         title: 'Hack Fed Square',

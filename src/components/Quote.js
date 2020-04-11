@@ -4,9 +4,7 @@ const Quote = (props) => {
   const { quoteText } = props;
   return (
     <blockquote className="quote">
-      <q>
-        {quoteText}
-      </q>
+      <q>{quoteText}</q>
     </blockquote>
   )
 }

@@ -13,7 +13,6 @@ const Intro = () => {
   }
   return (
     <section className="section-content section-content--intro">
-      {/* TODO: Reset base styles of button element */}
       <button
         onClick={scrollToStart}
       >
