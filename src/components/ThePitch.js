@@ -39,16 +39,19 @@ const solutions = {
   ],
   prototypes: [
     {
+      title: 'Digital Garden',
       imgSource: img4,
       alt: 'Our mixed reality prototype of a digital garden',
       text: 'Juxtaposed against the so-called concrete jungle of the Atrium walls, a digital garden to promote sustainability, tranquility and connection in a mutual meditative space.'
     },
     {
+      title: 'Dreamtime',
       imgSource: img5,
       alt: 'Our mixed reality prototype for Aboriginal Dreamtime art and storytelling',
       text: 'Combining Aboriginal imagery and spoken word narration of Dreamtime stories and Indigenous history of the land visitors are standing to give a richer and more contextual experience.'
     },
     {
+      title: 'Interactive Art',
       imgSource: img6,
       alt: 'Our mixed reality prototype for interactive art',
       text: 'Celebrating the rich cultural contributions of the city by encouraging users to interact with Fed Square through virtual art, and share and collaborate with others to create a digital archive.'
@@ -83,9 +86,10 @@ const ThePitch = () => {
         )
       })}
       {solutions.prototypes.map(prototype => {
-        const { imgSource, alt, text } = prototype;
+        const { title, imgSource, alt, text } = prototype;
         return (
           <PitchCard
+            title={title}
             key={alt}
             imgSource={imgSource}
             alt={alt}

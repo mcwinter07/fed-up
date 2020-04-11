@@ -1,15 +1,16 @@
 import React from 'react';
 
 const PitchCard = (props) => {
-  const { imgSource, alt, text } = props;
+  const { title, imgSource, alt, text } = props;
   return (
     <div className="pitch-card">
       <div className="pitch-card__image-container">
         <img src={imgSource} alt={alt}/>
       </div>
-      <p>
-        {text}
-      </p>
+      <div className="pitch-card__title-container">
+       <h3>{title}</h3>
+      </div>
+      <p>{text}</p>
     </div>
   )
 }
