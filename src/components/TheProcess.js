@@ -17,19 +17,19 @@ const processes = {
       imgSource: img1,
       alt: 'Fed Up team members Michael, Fotima and Linda',
       text: 'The heart of the creative process for the hack involved applying human-centred design thinking to identify and address a challenge for Fed Square that was open-ended, complex and loosely defined: namely how to deliver revenue-generating cultural experiences emblematic of Melbourne that will position Fed Square as a hub for creativity and innovation.',
-      isRightAligned: false
+      isRightAligned: true
     },
     {
       imgSource: img2,
       alt: 'Work on laptops and post it notes',
       text: 'Following an iterative design process to understand the human needs involved, reframe the problem in human-centric ways, brainstorm solutions and adopt a hands-on approach to prototyping and testing our ideas and assumptions, we applied the kaleidoscope metaphor figuratively and quite literally to our final concept as we felt this perfectly represented the vibrant and multi-faceted nature of the space and city.',
-      isRightAligned: true
+      isRightAligned: false
     },
     {
       imgSource: img3,
       alt: 'Fed Up team members Tim, Linda and TJ in discussion',
       text: 'Under the tutelage of our sage and knowing mentors from Marketing Entourage and PHORIA, a floodgate of ideas poured itself onto countless post-its decorating the walls of Deakin\'s Edge. Tempered by a ticking time clock and dose of reality, we eventually consolidated our ideas into a central core concept for our pitch.',
-      isRightAligned: false
+      isRightAligned: true
     }
   ]
 }

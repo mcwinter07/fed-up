@@ -1,7 +1,7 @@
 import React from 'react';
 import MadeBy from './MadeBy';
 import Swiper from 'react-id-swiper';
-import { Pagination, Navigation } from 'swiper/dist/js/swiper.esm';
+import { Navigation } from 'swiper/dist/js/swiper.esm';
 // import SwiperCard from './SwiperCard';
 import img1 from '../assets/images/links-1.jpg';
 import img2 from '../assets/images/links-2.jpg';

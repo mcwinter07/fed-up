@@ -9,14 +9,22 @@
   }
 
   &:nth-child(odd) {
+    p {
+      background: lightpink;
+    }
+
     img {
-      clip-path: polygon(0 5%, 88% 19%, 92% 96%, 0% 100%);
+      clip-path: polygon(1% 9%, 100% 0, 100% 100%, 5% 94%);
     }
   }
 
   &:nth-child(even) {
+    p {
+      background: lightseagreen;
+    }
+
     img {
-      clip-path: polygon(0 15%, 88% 13%, 89% 84%, 12% 100%);
+      clip-path: polygon(0 0, 100% 7%, 95% 97%, 4% 100%);
     }
   }
 }
