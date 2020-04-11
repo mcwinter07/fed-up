@@ -1,4 +1,48 @@
 .quote {
-  // margin: 0 gutter(5, large);
-  width: 50%;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  display: inline-flex;
+  font-style: italic;
+  color: color(heading-text);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: color(quote-background);
+    z-index: 0;
+    clip-path: polygon(0 0, 100% 11%, 94% 94%, 5% 86%);
+  }
+
+  q {
+    z-index: 1;
+    padding: 40px 50px 40px 45px;
+    quotes: none;
+
+    &::before {
+      left: -15px;
+      top: 15px;
+      transform: rotate(-20deg);
+    }
+
+    &::after {
+      right: 20px;
+      top: 30px;
+      transform: rotate(10deg);
+    }
+
+    &::before,
+    &::after {
+      content: '"';
+      font-stretch: ultra-condensed;
+      font-size: 130px;
+      font-weight: lighter;
+      position: absolute;
+      color: color(heading-background);
+    }
+  }
 }

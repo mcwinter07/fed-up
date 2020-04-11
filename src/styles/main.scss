@@ -19,8 +19,9 @@ it's called in from the topmost file of our application (App.js)
 // PAGE COMPONENTS
 @import './section-content';
 @import './intro';
-@import './team-list';
-@import './result';
+@import './the-team';
+@import './the-challenge.scss';
+@import './the-result';
 @import './related-links';
 
 // SUB-COMPONENTS
