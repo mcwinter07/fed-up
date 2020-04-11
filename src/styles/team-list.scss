@@ -12,7 +12,7 @@
 
   &-link {
     display: inline-flex;
-    width: 250px;
+    width: 230px;
     position: relative;
 
     &::before,
@@ -25,7 +25,7 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      background-color: pink;
+      background: color(intro);
       display: block;
       right: 10px;
       bottom: 10px;
@@ -54,15 +54,16 @@
   }
 
   .team__list-icon {
-    background: purple;
-    // Creates a flexbox that fits to the width and height of the its own content
+    background: color(team-icons);
+    // Creates a flexbox that fits to the width & height of the its own content
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    display: inline-flex;
     // To create a perfect square, the value for height/width/border-radius must be the same.
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    border: solid 0.2em white;
     margin-left: auto;
     margin-right: auto;
     margin-top: -35px;
@@ -71,6 +72,8 @@
     object {
       height: 30px;
       width: 30px;
+      border-width: 5px;
+      border-color: white;
     }
   }
 

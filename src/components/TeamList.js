@@ -63,7 +63,9 @@ const Team = () => {
 
   return (
     <section className="section-content section-content--the-team">
-      <h1 className="section-header">Meet the Team</h1>
+      <header className="section-header">
+        <h1>MEET THE TEAM</h1>
+      </header>
       <ul className="team__list">
         {teamFedUp.teamMembers.map((member, index) => {
           const { name, profileImage, title, icon, linkedIn } = member

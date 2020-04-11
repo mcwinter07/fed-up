@@ -43,7 +43,9 @@ const TheResult = () => {
   }
   return (
     <section className="section-content section-content--the-result">
-      <h1 className="section-header">The Result</h1>
+      <header className="section-header">
+        <h1>THE RESULT</h1>
+      </header>
       <div className="image__container">
         <img src={img1} alt="Hero featuring Team Fed Up and Hack Fed Square judges"/>
       </div>
