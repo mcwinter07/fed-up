@@ -54,7 +54,7 @@ const RelatedLinks = () => {
   };
 
   return (
-    <section className="section-content section-content--related-links">
+    <section>
       <header className="section-header">
         <h1>LINKS</h1>
       </header>
