@@ -66,11 +66,16 @@ $colors: (
       visited: map-get($palette, flamingo),
     )
   ),
-  team-icons: map-get($palette, fed-grape),
+  intro: map-get($palette, fed-green),
   heading-background: map-get($palette, fed-grape),
   heading-text: map-get($palette, white),
+  team-icons: map-get($palette, fed-grape),
+  text: map-get($palette, white),
   quote-background: map-get($palette, fed-pink),
-  intro: map-get($palette, fed-green)
+  info-card-purple: map-get($palette, fed-grape),
+  info-card-green: map-get($palette, fed-green),
+  pitch-card: map-get($palette, fed-green),
+  article-card: map-get($palette, fed-green),
 );
 
 // FONT VARIABLES

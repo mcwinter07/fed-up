@@ -1,7 +1,14 @@
 import React from 'react';
 
 const TeamProfile = (props) => {
-  const { teamProfileImage, teamProfileTitle, teamProfileName, teamProfileIcon, linkedIn, modifierClass } = props;
+  const {
+    teamProfileImage,
+    teamProfileTitle,
+    teamProfileName,
+    teamProfileIcon,
+    linkedIn,
+    modifierClass
+  } = props;
   return (
     <li className="team__list-item">
       <a

@@ -7,7 +7,7 @@ const InfoCard = (props) => {
       <div className="info-card__image-container">
         <img src={imgSource} alt={alt} />
       </div>
-      <p>
+      <p className={isRightAligned ? 'info-text info-text--right' : 'info-text'}>
         {text}
       </p>
     </div>

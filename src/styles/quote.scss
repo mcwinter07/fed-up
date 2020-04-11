@@ -5,7 +5,7 @@
   position: relative;
   display: inline-flex;
   font-style: italic;
-  color: color(heading-text);
+  color: color(text);
 
   &::before {
     content: '';
@@ -40,7 +40,6 @@
       content: '"';
       font-stretch: ultra-condensed;
       font-size: 130px;
-      font-weight: lighter;
       position: absolute;
       color: color(heading-background);
     }

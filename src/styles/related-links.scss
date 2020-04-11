@@ -1,0 +1,17 @@
+.swiper-container {
+  .article-card {
+    background: color(article-card);
+    padding: 20px 0px 50px;
+    clip-path: polygon(7% 5%, 91% 0, 92% 91%, 12% 100%);
+
+    .article-name,
+    .article-writer {
+      color: color(text)
+    }
+
+    .article-writer {
+      font-weight: lighter;
+    }
+  }
+}
+
