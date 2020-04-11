@@ -19,7 +19,6 @@ $palette: (
   fed-violet: #a300ad,
   fed-grape: #53387a,
   fed-aubergine: #34074f,
-  fed-purple: #62369B,
   burgundy: #a4343a,
   flamingo: #ff485b,
   coral: #e84a37,
@@ -67,9 +66,10 @@ $colors: (
       visited: map-get($palette, flamingo),
     )
   ),
-  team-icons: map-get($palette, fed-purple),
-  heading-background: map-get($palette, fed-purple),
+  team-icons: map-get($palette, fed-grape),
+  heading-background: map-get($palette, fed-grape),
   heading-text: map-get($palette, white),
+  quote-background: map-get($palette, fed-pink),
   intro: map-get($palette, fed-green)
 );
 

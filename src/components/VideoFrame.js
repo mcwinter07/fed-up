@@ -6,6 +6,7 @@ const VideoFrame = (props) => {
     <div className="video">
       <div className="video-container">
         <iframe
+          title={vidSource}
           key={vidSource}
           width="560"
           height="315"

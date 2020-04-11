@@ -7,6 +7,7 @@ const TeamProfile = (props) => {
       <a
         href={linkedIn}
         target="_blank"
+        rel="noreferrer noopener"
         className={`team__list-link team__list-link--${modifierClass}`}
       >
         <img

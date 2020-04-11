@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/main.scss';
 import Intro from './components/Intro';
-import TeamList from './components/TeamList';
+import TheTeam from './components/TheTeam';
 import TheChallenge from './components/TheChallenge';
 import TheProcess from './components/TheProcess';
 import ThePitch from './components/ThePitch';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Intro />
-      <TeamList />
+      <TheTeam />
       <TheChallenge />
       <TheProcess />
       <ThePitch />
