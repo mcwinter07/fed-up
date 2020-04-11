@@ -70,8 +70,10 @@ $colors: (
   heading-background: map-get($palette, fed-grape),
   heading-text: map-get($palette, white),
   team-icons: map-get($palette, fed-grape),
-  highlight-text: map-get($palette, white),
+  text: map-get($palette, white),
   quote-background: map-get($palette, fed-pink),
+  info-card-purple: map-get($palette, fed-grape),
+  info-card-green: map-get($palette, fed-green),
   article-card: map-get($palette, fed-green),
 );
 
