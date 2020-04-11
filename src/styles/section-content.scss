@@ -8,19 +8,18 @@
 .section-content {
   max-width: $content-width;
   margin: 0 auto; // adds padding on both sides to fill space (must be fixed width)
+  min-height: 100vh;
 
   .section-header {
     margin-left: auto;
     margin-right: auto;
-    display: inline-flex; // fill to length - will the entirety of its content, and no more
-    // background-color: dodgerblue;
+    display: inline-flex; // fill to length - will fill entirety of its content, and no more
   }
-  // TODO: Check this placement of min-height??
-  min-height: 100vh;
 
   h1 {
     background-color: color(heading-background);
     color: color(heading-text);
+    margin: 0;
   }
 
   &--intro {
@@ -76,7 +75,6 @@
     h1 {
       clip-path: polygon(7% 11%, 100% 24%, 97% 85%, 0 94%);
       padding: 55px 45px 35px 50px;
-      margin: 0;
     }
   }
 
@@ -85,7 +83,6 @@
     h1 {
       clip-path: polygon(2% 12%, 100% 10%, 99% 90%, 5% 72%);
       padding: 30px 40px 40px 55px;
-      margin: 0;
     }
   }
 
@@ -94,7 +91,6 @@
     h1 {
       clip-path: polygon(0 9%, 98% 24%, 91% 73%, 4% 83%);
       padding: 40px 55px 50px 40px;
-      margin: 0;
     }
   }
 
@@ -103,7 +99,6 @@
     h1 {
       clip-path: polygon(3% 9%, 100% 9%, 100% 81%, 7% 91%);
       padding: 40px 40px 45px 55px;
-      margin: 0;
     }
   }
 
@@ -112,16 +107,14 @@
     h1 {
       clip-path: polygon(3% 9%, 100% 9%, 100% 81%, 7% 91%);
       padding: 30px 35px 35px 50px;
-      margin: 0;
     }
   }
 
   &--related-links {
-    // background: color(link-variant, heavy, hover);
+    // background: dodgerblue;
     h1 {
       clip-path: polygon(9% 14%, 86% 4%, 95% 92%, 7% 91%);
       padding: 25px 45px 20px 45px;
-      margin: 0;
     }
   }
 }

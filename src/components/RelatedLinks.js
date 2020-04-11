@@ -46,38 +46,25 @@ const RelatedLinks = () => {
   }
 
   const params = {
-    modules: [Pagination, Navigation],
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+    modules: [Navigation],
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
   };
 
   return (
-    <section>
+    <section className="section-content section-content--related-links">
       <header className="section-header">
         <h1>LINKS</h1>
       </header>
       <Swiper {...params} >
-      {/* FIXME: Rendering issue when .map used with SwiperCard component */}
-      {/* {media.articles.map(article => {
-        const { title, writer, image, url } = article;
-        return (
-          <SwiperCard
-            key={title}
-            title = {title}
-            writer={writer}
-            image={image}
-            url={url}
-          />
-        )
-      })} */} 
         {media.articles.map(article => {
           const { title, writer, image, url } = article;
           return (
           <div className="article-card" key={title}>
-            <h4 className="article-name">{title}</h4>
-            <h4 className="article-writer">{writer}</h4>
+            <h2 className="article-name">{title}</h2>
+            <h3 className="article-writer">{writer}</h3>
             <a href={url}>
               <img src={image} alt={title}/>
             </a>
